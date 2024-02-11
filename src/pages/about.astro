@@ -1,23 +1,36 @@
 ---
-
+import Navigation from "../components/Navigation.astro"
+import Layout from "../layouts/Layout.astro"
 ---
 
-<main>
-  <a href='/'>Home</a>
-  <a href='/about/'>About</a>
-  <a href='/blog/'>Blog</a>
+<Layout title='About Me'>
+  <main>
+    <Navigation />
 
-  <h1>About me</h1>
+    <h1>About me</h1>
 
-  <h2>... and my new Astro site!</h2>
+    <h2>... and my new Astro site!</h2>
 
-  <p>
-    I am working through Astro's introductory tutorial. This is the second page on my website, and
-    it's the first one I built myself!
-  </p>
+    <p>
+      I am working through Astro's introductory tutorial. This is the second page on my website, and
+      it's the first one I built myself!
+    </p>
 
-  <p>
-    This site will update as I complete more of the tutorial, so keep checking back and see how my
-    journey is going!
-  </p>
-</main>
+    <p>
+      This site will update as I complete more of the tutorial, so keep checking back and see how my
+      journey is going!
+    </p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
